@@ -19,12 +19,12 @@ body{
 }
 
 a {
-  color: blueviolet;
+  color: yellow;
   transition: color 500ms
 }
 
 a:hover{
-    color: brown
+    color: gray
 }
 h1{
     font-size: 40px;
