@@ -4,9 +4,22 @@ function setup(){
 
 function draw(){
     background("darkgreen")
-    ellipse(320, 180, 100);
     
-    rect(50, 50, 100, 100);
-    ellipse(320, 120, 100);
-    arc(150, 200, 50, 100, 0 PI);
+    //eyes
+    fill("blue");
+    ellipse(320, 180, 100);
+    ellipse(200, 180, 100);
+    
+    //face
+    fill("black");
+    rect(320, 20, 100, 100);
+    
+    //ears
+    fill("orange")
+    ellipse(250, 180, 100);
+    ellipse(120, 180, 100);
+    
+    //mouth
+    stroke("gray")
+    line(152, 250, 250, 280)
 }
