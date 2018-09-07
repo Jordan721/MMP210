@@ -17,24 +17,21 @@ function draw(){
     
     //hair
     fill("black")
-    rect(220, 20, 100, 120);
+    rect(220, 20, 140, 120);
     
-    //cheeks
-    fill("blue");
-    ellipse(50, 100, 40);
-    ellipse(50, 200, 40);
-      
+    
     //eyes
     fill("orange")
-    ellipse(250, 70, 30);
-    ellipse(120, 70, 30);
+    ellipse(250, 90, 40);
+    ellipse(120, 70, 50);
     
     //nose
     stroke("gray")
-    rect(75, 125, 20, 20);
+    fill("gray")
+    rect(175, 125, 50, 50);
     
     //mouth
     stroke("red")
-    rect(75, 125, 70, 10, 10);
+    rect(175, 205, 90, 10, 10);
     
 }
