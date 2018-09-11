@@ -15,15 +15,15 @@ function draw(){
     fill("brown");
     ellipse (220, 20, 220, 420);
     
-    //hair
+    //stripe
     fill("black")
-    rect(220, 20, 140, 120);
+    rect(220, 20, 60, 440);
     
     
     //eyes
     fill("orange")
-    ellipse(250, 90, 40);
-    ellipse(120, 70, 50);
+    ellipse(250, 90, 70);
+    ellipse(120, 70, 60);
     
     //nose
     stroke("gray")
@@ -32,6 +32,7 @@ function draw(){
     
     //mouth
     stroke("red")
+    fill("blue")
     rect(175, 205, 90, 10, 10);
     
 }
