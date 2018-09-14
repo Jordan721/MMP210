@@ -1,5 +1,5 @@
 /*
-Self Portrait 1
+Self Portrait 2 with Variables 
 By Jordan Alexis 
 MMP210
 */
@@ -23,7 +23,7 @@ function setup(){
     fill("orange")
     ellipse(250, 90, 70);
     ellipse(120, 70, 60);
-    
+         
     //nose
     stroke("gray")
     fill("gray")
@@ -31,6 +31,12 @@ function setup(){
     
     //mouth
     stroke("red")
+    strokeWeight(4);
     fill("blue")
     rect(175, 205, 90, 10, 10);
+         
+          //puipls
+         fill("teal")
+         ellipse(250, 70, 40);
+         ellipse(120, 70, 20);
 }
