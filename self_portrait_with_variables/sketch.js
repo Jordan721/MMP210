@@ -6,12 +6,15 @@ MMP210
 function setup(){
     createCanvas (640, 360);
 }
-     function draw(){
+
+    var eyesize= 25;
+    var faceColor = "brown"
+    function draw(){
     background(200);
          
      //face
     rectMode(CENTER)
-    fill("brown");
+    fill(faceColor);
     ellipse (220, 20, 220, 420);
     
     //stripe
