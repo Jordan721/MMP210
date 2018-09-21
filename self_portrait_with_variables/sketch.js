@@ -7,7 +7,7 @@ function setup(){
     createCanvas (640, 360);
 }
 
-    var eyesize= 25;
+    var eyesize= 50;
     var faceColor = "brown"
     function draw(){
     background(200);
@@ -24,8 +24,8 @@ function setup(){
     
     //eyes
     fill("orange")
-    ellipse(250, 90, 70);
-    ellipse(120, 70, 60);
+    ellipse(250, 90, eyesize);
+    ellipse(120, 70, eyesize);
          
     //nose
     stroke("gray")
@@ -41,5 +41,5 @@ function setup(){
           //puipls
          fill("teal")
          ellipse(250, 70, 40);
-         ellipse(120, 70, 20);
+         ellipse(120, 70, 30);
 }
