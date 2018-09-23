@@ -9,13 +9,16 @@ function setup(){
 
     var eyesize= 50;
     var faceColor = "brown"
+    var puiplsize1= 40;
+    var puiplsize2= 30;
+    var facesize= 420;
     function draw(){
     background(200);
          
      //face
     rectMode(CENTER)
     fill(faceColor);
-    ellipse (220, 20, 220, 420);
+    ellipse (220, 20, 220, facesize);
     
     //stripe
     fill("black")
@@ -40,6 +43,6 @@ function setup(){
          
           //puipls
          fill("teal")
-         ellipse(250, 70, 40);
-         ellipse(120, 70, 30);
+         ellipse(250, 70, puiplsize1);
+         ellipse(120, 70, puiplsize2);
 }
