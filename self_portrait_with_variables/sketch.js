@@ -27,7 +27,7 @@ function setup(){
     
     //eyes
     fill("orange")
-    ellipse(250, 90, eyesize);
+    ellipse(270, 90, eyesize);
     ellipse(120, 70, eyesize);
          
     //nose
@@ -43,6 +43,6 @@ function setup(){
          
           //puipls
          fill("teal")
-         ellipse(250, 70, puiplsize1);
-         ellipse(120, 70, puiplsize2);
+         ellipse(260, 70, puiplsize1);
+         ellipse(110, 70, puiplsize2);
 }
