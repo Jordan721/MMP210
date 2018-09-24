@@ -1,0 +1,31 @@
+body{
+    font-family: "Courier New", Courier, monospace;
+     margin-left: 150px;
+    padding: 0;
+}
+#container{
+    padding: 50px 0;
+    width: 500px;
+    margin: 0 auto;
+}
+.link {
+  list-style: none;
+  color: red;
+  font-size: 2em;
+}
+
+.link a {
+  color: orange;
+}
+
+a {
+  color: yellow;
+  transition: color 500ms
+}
+
+a:hover{
+    color: gray
+}
+h1{
+    font-size: 40px;
+}
