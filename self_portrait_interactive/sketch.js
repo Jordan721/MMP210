@@ -10,9 +10,9 @@ function setup(){
 function draw(){
     background ("gray");
 
-var x= width/2;
-var y= height/2;
-var y = height/2;
+var x= width/17;
+var y= height/20;
+var y = height/20;
 var s = 200; // size
 var o = 50; // offset
  var eyesize= 50;
@@ -45,7 +45,6 @@ var facesize= 420;
     stroke("red")
     strokeWeight(4);
     fill("blue")
-    rect(175, 205, 90, 10, 10);
          
           //puipls
          fill("teal")
@@ -55,6 +54,6 @@ var facesize= 420;
     var mouthSize = map(mouseX, 0, width, 5, 200); // move mouth with mouse x
 	mouthSize = max(0, mouthSize); // prevents negative value error
 
-	rect(x, y + o, s/2, mouthSize, 10); // mouth
+	rect(220, 125 + 80, s/2, mouthSize, 175); // mouth
 }
 
