@@ -47,12 +47,12 @@ function draw() {
 
 
     //puipls
-    fill("red")
+    fill("teal")
     ellipse(270, 90, puiplsize1);
     ellipse(120, 70, puiplsize2);
 
     var mouthSize = map(mouseX, 0, width, 5, 200); // move mouth with mouse x
     mouthSize = max(0, mouthSize); // prevents negative value error
-    fill("blue")
+    fill("blue");
     rect(220, 125 + 80, s / 2, mouthSize, 175); // mouth
 }
