@@ -11,9 +11,15 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+    background("yellow");
     fill("red");
-    textSize(52);
-    textFont("Times New Roman");
-    text("MEME", width / 2, height / 2);
+    var meme = "Memes for days son.";
+
+    var s = mouseX;
+    textSize(s);
+
+    var leadingSize = mouseY;
+    textLeading(leadingSize);
+
+    text(meme, 20, 20, 400, 400);
 }
