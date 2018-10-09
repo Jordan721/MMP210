@@ -1,5 +1,5 @@
 /*
- Meme V 1
+ Meme V 0
  Jordan Alexis
  10/2/2018
  rough draft
