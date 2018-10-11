@@ -16,20 +16,22 @@ function setup() {
     createCanvas(500, 500)
 }
 
-function draw(){
+function draw() {
     background("yellow")
     fill("red");
     var meme = "Memes for days son.";
-    
-    text(meme, 20, 20, 400, 400);
-    image(img, 20, 20, 400, 400);
-    
-     var s = mouseX;
+
+    var s = mouseX;
     textSize(s);
 
     var leadingSize = mouseY;
     textLeading(leadingSize);
     var leadingSize = mouseY;
     textLeading(leadingSize);
-    
+
+    text(meme, 20, 20, 400, 400);
+    image(img, 20, 20, 400, 400);
+
+
+
 }
