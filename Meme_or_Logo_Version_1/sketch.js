@@ -6,21 +6,31 @@
  MMP 210 Week 5
  */
 
+
+
 function setup() {
     createCanvas(500, 500)
-
 }
 
-    function draw() {
-        background("yellow");
-        fill("red");
-        var meme = "Memes for days son.";
+function draw(){
+    background("yellow")
+    fill("red");
+    var meme = "Memes for days son.";
 
-        var s = mouseX;
-        textSize(s);
+    var s = mouseX;
+    textSize(s);
 
-        var leadingSize = mouseY;
-        textLeading(leadingSize);
+    var leadingSize = mouseY;
+    textLeading(leadingSize);
+    var leadingSize = mouseY;
+    textLeading(leadingSize);
+    
+    text(meme, 20, 20, 400, 400);
+    image(img, 20, 20, 400, 400);
+    
+}
+var img;
 
-        text(meme, 20, 20, 400, 400);
-    }
+function preload() {
+    img = loadImage("Meme's_pic.png");
+}
