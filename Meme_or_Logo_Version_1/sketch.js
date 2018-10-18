@@ -27,11 +27,8 @@ function draw() {
     textLeading(leadingSize);
     var leadingSize = mouseY;
     textLeading(leadingSize);
-    
+
     image(img, 20, 20, 400, 400);
     text(meme, 20, 20, 400, 400);
-    
-
-
 
 }
