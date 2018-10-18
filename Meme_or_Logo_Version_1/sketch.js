@@ -6,14 +6,13 @@
  MMP 210 Week 5
  */
 
+function setup() {
+    createCanvas(500, 500)
+}
 var img;
 
 function preload() {
     img = loadImage("Meme's_pic.png");
-}
-
-function setup() {
-    createCanvas(500, 500)
 }
 
 function draw() {
