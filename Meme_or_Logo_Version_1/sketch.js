@@ -9,7 +9,7 @@
 function setup() {
     createCanvas(500, 500)
 }
-var img
+var img;
 
 function preload() {
     img = loadImage("Memes_pic.png");
