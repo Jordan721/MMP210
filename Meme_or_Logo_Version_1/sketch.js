@@ -9,10 +9,10 @@
 function setup() {
     createCanvas(500, 500)
 }
-var img;
+var img
 
 function preload() {
-    img = loadImage("Meme's_pic.png");
+    img = loadImage("Memes_pic.png");
 }
 
 function draw() {
@@ -27,9 +27,10 @@ function draw() {
     textLeading(leadingSize);
     var leadingSize = mouseY;
     textLeading(leadingSize);
-
-    text(meme, 20, 20, 400, 400);
+    
     image(img, 20, 20, 400, 400);
+    text(meme, 20, 20, 400, 400);
+    
 
 
 
