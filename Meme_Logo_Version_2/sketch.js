@@ -8,11 +8,8 @@
 
 var img;
 
-image(img, 20, 20, 400, 400);
-text(meme, 20, 20, 400, 400);
-
 function preload() {
-    img = loadImage("Meme's_pic.png");
+    img = loadImage("Memes_pic.png");
 }
 
 function setup() {
@@ -30,6 +27,9 @@ function draw() {
     textLeading(leadingSize);
     var leadingSize = mouseY;
     textLeading(leadingSize);
+
+    //image(img, 20, 20, 400, 400);
+    //text(meme, 20, 20, 400, 400);
 
     strokeWeight(1);
     stroke("white");
@@ -50,7 +50,7 @@ function draw() {
         // bottom right
         fill('teal');
     }
-
+    
     if (mouseIsPressed) {
         var s = (mouseX - pmouseX) + (mouseY - pmouseY);
         ellipse(mouseX, mouseY, s);
