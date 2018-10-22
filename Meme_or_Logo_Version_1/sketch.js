@@ -12,7 +12,7 @@ function setup() {
 var img;
 
 function preload() {
-    img = loadImage("Memes_pic.png");
+    img = loadImage("Memes_Pic.png");
 }
 
 function draw() {
