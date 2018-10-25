@@ -16,7 +16,7 @@ function preload() {
 }
 
 function draw() {
-    background("yellow")
+    background("gray")
     fill("red");
     var meme = "Memes for days son.";
 
