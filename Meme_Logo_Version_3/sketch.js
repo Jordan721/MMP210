@@ -76,15 +76,10 @@ function draw() {
     }
 
 
-
-
-
     fill(textFill);
 
     textSize(25);
     textFont("African");
-
-
 
 
     if (mouseIsPressed) {
@@ -102,6 +97,4 @@ function draw() {
         text("Right Round", 172, 413);
 
     }
-
-
 }
