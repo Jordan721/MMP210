@@ -1,0 +1,67 @@
+body {
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 39;
+    color: gray;
+}
+
+#container {
+    padding: 50px 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.link {
+    list-style: none;
+    color: red;
+    font-size: 2em;
+}
+
+.link a {
+    color: orange;
+}
+
+a {
+    color: yellow;
+    transition: color 500ms
+}
+
+a:hover {
+    color: gray
+}
+
+h1 {
+    font-size: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}

@@ -3,8 +3,8 @@ Self Portrait 2 with Variables
 By Jordan Alexis 
 MMP210
 */
-function setup(){
-    createCanvas (640, 360);
+function setup() {
+    createCanvas(640, 360);
 }
 
     var eyesize= 50;
