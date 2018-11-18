@@ -8,9 +8,6 @@ function setup() {
     createCanvas(640, 360);
 }
 
-var r,
-    g,
-    b;
 var x = 100,
     y = 100,
     w = 200,
@@ -19,6 +16,8 @@ var x = 100,
 function draw() {
     //rect(x, y, w, h);
     
+    background("sliver");
+
     //face
     rectMode(CENTER);
     fill("brown");
@@ -47,10 +46,11 @@ function draw() {
 
 function mousePressed() {
     if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
-        r = random(0, 255);
-        g = random(0, 255);
-        b = random(0, 255);
-        fill(r, g, b);
+        x = random(0, 255);
+        y = random(0, 255);
+        w = random(0, 255);
+        h = random(0, 255);
+        fill(x, y, w, h);
         ellipse(random(width), random(height), random(20, 100));
 
 
