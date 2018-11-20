@@ -6,23 +6,8 @@ body {
 }
 
 
-.link {
-    list-style: none;
-    color: red;
-    font-size: 2em;
-}
-
-.link a {
-    color: orange;
-}
-
 a {
-    color: yellow;
-    transition: color 500ms
-}
-
-a:hover {
-    color: gray
+   font-family: 'Chakra Petch', sans-serif;
 }
 
 h1 {
