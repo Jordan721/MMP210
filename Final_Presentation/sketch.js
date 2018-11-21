@@ -30,22 +30,22 @@ function setup() {
 function draw() {
     background(220);
     if (slide == 0) {
-        text("Final Project Idea Animated", width / 2, height / 2);
+        text("Final Project Idea: Animation", width / 2, height / 2);
     } else if (slide == 1) {
         textSize(30);
-        text("Sensor I'm using to animate A-frame", 100, 100);
+        text("Sensor I'm using to animate A-frame", 500, 100);
         // potentiometer pic
-        image(poten, 400, 100, 40, 60);
-        image(adu, 200, 100, 40, 60);
-        image(breadb, 500, 100, 40, 60);
+        image(poten, 400, 200, 100, 200);
+        image(adu, 300, 200, 100, 200);
+        image(breadb, 500, 200, 100,200);
 
     } else if (slide == 2) {
-        text("theme: animation", 200, 20);
-        image(ani, 200, 100, 40, 60);
+        text("theme:", 200, 40);
+        image(ani, 400, 200, 390, 160);
 
     } else if (slide == 3) {
         text("Image of Aframe", 200, 20);
-        image(AFrame, 200, 100, 40, 60);
+        image(AFrame, 200, 200, 390, 300);
     }
 
 
