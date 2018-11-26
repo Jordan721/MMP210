@@ -30,7 +30,7 @@ function setup() {
 function draw() {
     background(220);
     if (slide == 0) {
-        text("Final Project Idea: Animation", width / 2, height / 2);
+        text("Final Project", width / 2, height / 2);
     } else if (slide == 1) {
         textSize(30);
         text("Sensor I'm using to animate A-frame", 500, 100);
