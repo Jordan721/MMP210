@@ -1,0 +1,50 @@
+body {
+    background-color: dimgray;
+}
+
+
+
+.link {
+    list-style: none;
+    color: red;
+    font-size: 2em;
+}
+
+.link a {
+    color: orange;
+}
+
+a {
+    color: yellow;
+    transition: color 500ms
+}
+
+a:hover {
+    color: gray
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+
