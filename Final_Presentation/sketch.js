@@ -5,16 +5,12 @@ Jordan Alexis
 */
 
 var slide = 0;
-var adu;
 var poten;
-var breadb;
 var ani;
 var AFrame;
 
 function preload() {
-    adu = loadImage('Photos_Final/poten.jpg');
-    poten = loadImage('Photos_Final/kit.jpg');
-    breadb = loadImage('Photos_Final/breadb.jpg');
+    poten = loadImage('Photos_Final/poten.jpg');
     AFrame = loadImage('Photos_Final/AFrame_Pic.png')
     ani = loadImage('Photos_Final/Sony_Pictures_Animation_logo.png')
 }
@@ -32,12 +28,10 @@ function draw() {
     if (slide == 0) {
         text("Final Project", width / 2, height / 2);
     } else if (slide == 1) {
-        textSize(30);
-        text("Sensor I'm using to animate A-frame", 500, 100);
+        textSize(20);
+        text("I'm Using a Potentiometer to animate my 3d scene", 500, 100);
         // potentiometer pic
         image(poten, 400, 200, 100, 200);
-        image(adu, 300, 200, 100, 200);
-        image(breadb, 500, 200, 100,200);
 
     } else if (slide == 2) {
         text("theme:", 200, 40);
