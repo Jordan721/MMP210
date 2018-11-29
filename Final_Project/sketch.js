@@ -24,7 +24,7 @@ function draw() {
             var b = i / 12 * PI;
             translate(sin(2 * a) * radius * sin(b), cos(b) * radius / 2, cos(2 * a) * radius * sin(b));
             if (j % 2 === 0) {
-                fill('red')
+                fill('white')
                 cone(30, 30);
             } else {
                 fill('blue')

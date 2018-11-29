@@ -8,36 +8,55 @@
 </head>
 
 <body style="background-color: tomato">
-    <nav>
-        <ul>
-            <li class="index.html"><a href="../" style="color: black">Home</a></li>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <li class="index.html"><a href="../About/About.html" style="color: darkred" class="nav-item nav-link">About</a></li>
+        <a href="../index.html" style="color: saddlebrown">Home</a>
 
-            <li class="index.html"><a href="../Contact/Contact.html" style="color: darkgoldenrod" class="nav-item nav-link">Contact</a></li>
+        <a href="../About/About.html" style="color: darkred" class="nav-item nav-link">About</a>
 
-            <li class="index.html"><a href="../self_portrait/index.html" style="color: darkmagenta" class="nav-item nav-link">Self Portrait Version 1</a></li>
+        <a href="../Contact/Contact.html" style="color: darkgoldenrod" class="nav-item nav-link">Contact</a>
 
-            <li class="index.html"><a href="../self_portrait_interactive/index.html" style="color: firebrick">Self Portrait Version 3</a></li>
+        <a href="../self_portrait/index.html" style="color: darkmagenta" class="nav-item nav-link">Self Portrait Version 1</a>
 
-            <li class="index.html"><a href="../Meme_or_Logo_Version_1/Meme_Logo.html" style="color: cornflowerblue">Meme Version 0</a></li>
+        ><a href="../self_portrait_interactive/index.html" style="color: firebrick">Self Portrait Version 3</a>
 
-            <li class="index.html" class="nav-item nav-link"><a href="../Meme_Logo_Version_2/Meme_Logo_VR_1.html" style="color: darkorange">Meme Version 1 Quad</a></li>
+        <a href="../Meme_or_Logo_Version_1/Meme_Logo.html" style="color: cornflowerblue">Meme Version 0</a>
 
-            <li class="index.html"><a href="../Meme_Logo_Version_3/Meme_Logo_VR_2.html" style="color: darkmagenta">Meme Version 2 Yo</a></li>
+        <a href="../Meme_Logo_Version_2/Meme_Logo_VR_1.html" style="color: darkorange">Meme Version 1 Quad</a>
 
-            <li class="index.html"><a href="../Functions/Functions.html" style="color: indigo">Functions</a></li>
+        <a href="../Meme_Logo_Version_3/Meme_Logo_VR_2.html" style="color: darkmagenta">Meme Version 2 Yo</a>
 
-            <li class="index.html"><a href="../Sound/Sound.html" style="color: brown">Sound</a></li>
+        <a href="../Functions/Functions.html" style="color: indigo">Functions</a>
 
-            <li class="index.html"><a href="../Final_Presentation/Final_Presentation.html">Final Presentation</a></li>
-        </ul>
-    </nav>
+        <a href="../Sound/Sound.html" style="color: brown">Sound</a>
+
+        <a href="../Final_Presentation/Final_Presentation.html">Final Presentation</a>
+
+        <a href="../Final_Project/Final_Project.html" style="color: salmon">Final Project</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NAV</span>
     <h1>Hello Everyone this is my self Portrait 2 with Variables.</h1>
     <div id="container">
         <script src="p5.min.js"></script>
         <script src="sketch.js"></script>
     </div>
+    
+    <!--JavaScripy scripts-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script>
 </body>
 
 </html>

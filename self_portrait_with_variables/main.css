@@ -4,53 +4,69 @@ body {
     padding: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 #container {
     padding: 50px 0;
     width: 500px;
     margin: 0 auto;
 }
 
-.link {
-    list-style: none;
-    color: red;
-    font-size: 2em;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.link a {
-    color: orange;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-a {
-    color: yellow;
-    transition: color 500ms
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-a:hover {
-    color: gray
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-h1 {
-    font-size: 40px;
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-nav {
-    text-align: center;
+span {
+    color: aliceblue;
 }
 
-nav li {
-    display: inline;
-}
-
-nav a {
-    display: inline-block;
-    padding: 5px;
-    background-color: antiquewhite;
-}
 
 canvas {
     padding-left: 0;
