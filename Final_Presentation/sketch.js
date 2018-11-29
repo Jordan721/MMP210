@@ -11,7 +11,7 @@ var AFrame;
 
 function preload() {
     poten = loadImage('Photos_Final/poten.jpg');
-    AFrame = loadImage('Photos_Final/AFrame_Pic.png')
+    AFrame = loadImage('Photos_Final/Pic_of_3d.png')
     ani = loadImage('Photos_Final/Sony_Pictures_Animation_logo.png')
 }
 
@@ -34,11 +34,11 @@ function draw() {
         image(poten, 400, 200, 100, 200);
 
     } else if (slide == 2) {
-        text("theme:", 200, 40);
+        text("theme: Emptyness", 200, 40);
         image(ani, 400, 200, 390, 160);
 
     } else if (slide == 3) {
-        text("Image of Aframe", 200, 20);
+        text("Image of Orbit Control Example", 200, 20);
         image(AFrame, 200, 200, 390, 300);
     }
 
