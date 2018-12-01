@@ -4,7 +4,7 @@ Jordan Alexis
 */
 
 function setup() {
-    createCanvas(710, 400, WEBGL);
+    createCanvas(900, 500, WEBGL);
     rectMode(CENTER);
 }
 
