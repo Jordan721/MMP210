@@ -35,6 +35,7 @@ h1 {
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: 'Permanent Marker', cursive
 }
 
 .sidenav a:hover {
@@ -78,4 +79,38 @@ canvas {
     /* This is half the width */
     margin-top: -200px;
     /* This is half the height */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Permanent Marker', cursive
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: gray;
+}
+
+.active {
+    background-color: crimson;
 }
