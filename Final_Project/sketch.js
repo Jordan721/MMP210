@@ -49,7 +49,7 @@ function serialEvent() {
 
 function draw() {
     var c = map(sensorValue, 0, 1023, 0, 180);
-
+    var radius = width * 1.5;
     background("black");
 
     var radius = width * 1.5;
@@ -65,14 +65,17 @@ function draw() {
     //    orbitControl
 
     //    Camera
-//    push();
+    //    push();
     //    console.log(sensorValue);
     var r = map(sensorValue, 0, 1023, 0, 2 * PI);
-//    rotateX(r);
-    var z =  map(sensorValue, 0, 1023, 0, 100);
+    //    rotateX(r);
+    var z = map(sensorValue, 0, 1023, 0, 100);
     var y = map(sensorValue, 0, 1023, 0, 100);
     camera(0, 0, z, 0, 0, 0, 0, 1, 0);
-//    pop();
+    var x = map(mouseX, 0, width, -200, 200); //sensorValue add this
+	var y = map(mouseY, 0, height, -200, 200); //sensorValue add this
+	camera(0, 0, 200, x, y, 0, 0, 1, 0);
+    //    pop();
 
     normalMaterial();
     translate(0, 0, -600);
