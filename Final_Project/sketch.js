@@ -4,18 +4,56 @@ Jordan Alexis
 */
 var NewAge;
 var bing;
+var serial;
+var portName = "COM11";
+var sensorValue;
+
+function setup() {
+    createCanvas(800, 500, WEBGL);
+    rectMode(CENTER);
+
+    serial = new p5.SerialPort();
+    serial.on('connected', serverConnected);
+    serial.on('open', portOpen);
+    serial.on('data', serialEvent);
+    serial.on('error', serialError);
+    serial.on('close', portClose);
+
+    serial.open(portName);
+}
+
+function serverConnected() {
+    console.log('connected to server.');
+}
+
+function portOpen() {
+    console.log('the serial port opened.');
+}
+
+function portClose() {
+    console.log('The serial port closed.');
+}
+
+function serialError() {
+    console.log("error");
+}
+
+function serialEvent() {
+    var currentString = serial.readLine(); // read the incoming string
+    trim(currentString); // remove any trailing whitespace
+    if (!currentString) {
+        return; // if the string is empty, do no more
+    }
+    sensorValue = currentString; // save it for the draw method
+}
 
 function preload() {
     NewAge = loadSound('new-age-pad.wav');
     bing = loadSound('new-age-brass.wav')
 }
 
-function setup() {
-    createCanvas(800, 500, WEBGL);
-    rectMode(CENTER);
-}
-
 function draw() {
+    var c = map(sensorValue, 0, 1023, 0, 180);
     if (NewAge.isPlaying) {
         background("black");
     }
@@ -31,7 +69,17 @@ function draw() {
     var rate = map(mouseX, 0, width, 0.25, 2);
     rate = constrain(rate, 0.25, 2);
     //drag to move the world.
-    orbitControl();
+    //    orbitControl
+
+    //    Camera
+    push();
+//    console.log(sensorValue);
+    var r = map(sensorValue, 0, 1023, 0, 2 * PI);
+    rotateX(r);
+    var z = 0; //  map(sensorValue, 0, 1023, 0, 100);
+    var y = map(sensorValue, 0, 1023, 0, 100);
+    camera(0, 0, z, 0, 0, 0, 0, 1, 0);
+    pop();
 
     normalMaterial();
     translate(0, 0, -600);
