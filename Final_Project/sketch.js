@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(900, 500, WEBGL);
+    createCanvas(800, 500, WEBGL);
     rectMode(CENTER);
 }
 
