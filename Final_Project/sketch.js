@@ -65,14 +65,14 @@ function draw() {
     //    orbitControl
 
     //    Camera
-    push();
+//    push();
     //    console.log(sensorValue);
     var r = map(sensorValue, 0, 1023, 0, 2 * PI);
-    rotateX(r);
-    var z = 0; //  map(sensorValue, 0, 1023, 0, 100);
+//    rotateX(r);
+    var z =  map(sensorValue, 0, 1023, 0, 100);
     var y = map(sensorValue, 0, 1023, 0, 100);
-    camera(0, z, 0, 0, 0, 0, 0, 1, 0);
-    pop();
+    camera(0, 0, z, 0, 0, 0, 0, 1, 0);
+//    pop();
 
     normalMaterial();
     translate(0, 0, -600);
