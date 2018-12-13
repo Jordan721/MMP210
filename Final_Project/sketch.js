@@ -9,7 +9,7 @@ var portName = "COM11";
 var sensorValue;
 
 function setup() {
-    createCanvas(800, 500, WEBGL);
+    createCanvas(1000, 500, WEBGL);
     rectMode(CENTER);
 
     serial = new p5.SerialPort();
