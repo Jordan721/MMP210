@@ -73,8 +73,8 @@ function draw() {
     var y = map(sensorValue, 0, 1023, 0, 100);
     camera(0, 0, z, 0, 0, 0, 0, 1, 0);
     var x = map(mouseX, 0, width, -200, 200); //sensorValue add this
-	var y = map(mouseY, 0, height, -200, 200); //sensorValue add this
-	camera(0, 0, 200, x, y, 0, 0, 1, 0);
+    var y = map(mouseY, 0, height, -200, 200); //sensorValue add this
+    camera(0, 0, 200, x, y, 0, 0, 1, 0);
     //    pop();
 
     normalMaterial();
