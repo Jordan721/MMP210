@@ -92,12 +92,12 @@ function draw() {
                 fill('white')
                 rotateZ(frameCount * 0.02);
                 rotateX(frameCount * 0.02);
-                cone(30, 30);
+                cone(40, 60);
             } else {
-                fill('blue')
+                fill('teal')
                 rotateZ(frameCount * 0.05);
                 rotateX(frameCount * 0.05);
-                box(30, 30, 30);
+                box(50, 30, 30);
             }
             pop();
         }
