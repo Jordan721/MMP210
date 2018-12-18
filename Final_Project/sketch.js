@@ -5,8 +5,8 @@ Jordan Alexis
 var serial;
 var portName = "COM16";
 var sensorValue;
-var inMessage = "0";
-var inMessage = "1";
+var sensorValue2;
+var inMessage = [0, 0];
 
 
 function setup() {
@@ -45,7 +45,10 @@ function serialEvent() {
     if (!currentString) {
         return; // if the string is empty, do no more
     }
-    sensorValue = currentString; // save it for the draw method
+//    sensorValue = currentString; // save it for the draw method
+    inMessage = split(currentString, "&");
+    sensorValue = inMessage[0];
+    sensorValue2 = inMessage[1];
 }
 
 function draw() {
@@ -66,7 +69,7 @@ function draw() {
     //    orbitControl
 
     //    Camera
-    push();
+//    push();
     //    console.log(sensorValue);
     var r = map(sensorValue, 0, 1023, 0, 2 * PI);
     //        rotateX(r);
@@ -76,9 +79,9 @@ function draw() {
     //    var x = map(sensorValue 0, width, -200, 200); //sensorValue add this
     //    var y = map(sensorValue, 0, height, -200, 200); //sensorValue add this
     var x = map(sensorValue, 0, width, -200, 100); //sensorValue add this
-    var y = map(sensorValue, 0, height, -200, 100); //sensorValue add this
+    var y = map(sensorValue2, 0, height, -200, 100); //sensorValue add this
     camera(0, 0, 200, x, y, 0, 0, 1, 0);
-    pop();
+//    pop();
 
     normalMaterial();
     translate(0, 0, -600);
