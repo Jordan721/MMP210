@@ -5,7 +5,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int sensorValue = analogRead(A0);    
-  Serial.println(sensorValue);
+  int sensorValue = analogRead(A0);
+   int sensorValue2 = analogRead(A3);        
+  Serial.print(sensorValue);
+  Serial.print("&");
+  Serial.println(sensorValue2);
   delay(10);  
 }

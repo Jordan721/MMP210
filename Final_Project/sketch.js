@@ -2,11 +2,12 @@
 Final Project 
 Jordan Alexis 
 */
-var NewAge;
-var bing;
 var serial;
-var portName = "COM11";
+var portName = "COM16";
 var sensorValue;
+var inMessage = "0";
+var inMessage = "1";
+
 
 function setup() {
     createCanvas(1000, 500, WEBGL);
@@ -61,21 +62,23 @@ function draw() {
 
     var rate = map(mouseX, 0, width, 0.25, 2);
     rate = constrain(rate, 0.25, 2);
-    //drag to move the world.
+    //Mover the world.
     //    orbitControl
 
     //    Camera
-    //    push();
+    push();
     //    console.log(sensorValue);
     var r = map(sensorValue, 0, 1023, 0, 2 * PI);
-    //    rotateX(r);
-    var z = map(sensorValue, 0, 1023, 0, 100);
-    var y = map(sensorValue, 0, 1023, 0, 100);
-    camera(0, 0, z, 0, 0, 0, 0, 1, 0);
-    var x = map(mouseX, 0, width, -200, 200); //sensorValue add this
-    var y = map(mouseY, 0, height, -200, 200); //sensorValue add this
+    //        rotateX(r);
+    //    var z = map(sensorValue, 0, 1023, 0, 100);
+    //    var y = map(sensorValue, 0, 1023, 0, 100);
+    camera(0, 0, x, y, 0, 0, 0, 1, 0);
+    //    var x = map(sensorValue 0, width, -200, 200); //sensorValue add this
+    //    var y = map(sensorValue, 0, height, -200, 200); //sensorValue add this
+    var x = map(sensorValue, 0, width, -200, 100); //sensorValue add this
+    var y = map(sensorValue, 0, height, -200, 100); //sensorValue add this
     camera(0, 0, 200, x, y, 0, 0, 1, 0);
-    //    pop();
+    pop();
 
     normalMaterial();
     translate(0, 0, -600);
